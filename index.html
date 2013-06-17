@@ -28,7 +28,10 @@
         </ul>
       </header>
       <section>
-        <p>CSS3 Animations with special effects. Now on beta, more effects coming soon. Many thanks to <a href="http://daneden.me/animate/">daneden</a> for inspiration!
+        <h1>
+<a name="magic" class="anchor" href="#magic"><span class="octicon octicon-link"></span></a>magic</h1>
+
+<p>CSS3 Animations with special effects. Now on beta, more effects coming soon. Many thanks to <a href="http://daneden.me/animate/">daneden</a> for inspiration!
 My next step is to minifing the code.
 Take a look at the demo <a href="http://www.minimamente.com/magic-css3-animations">link to demo page</a></p>
 
@@ -49,7 +52,7 @@ include the mynified version: magic.min.css</p>
 
 <p>This is a sample code on hover with jQuery, first you include the class "magictime" and after your desired animation.</p>
 
-<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.meta-thumb'</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.yourdiv'</span><span class="p">).</span><span class="nx">hover</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'magictime puffIn'</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
@@ -79,6 +82,16 @@ include the mynified version: magic.min.css</p>
 <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
 <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
 <span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>If you want to assign the timing to a specific animation, you can use that code (use 2 class):</p>
+
+<div class="highlight"><pre><span class="nc">.magictime.magic</span> <span class="p">{</span>
+<span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">10s</span><span class="p">;</span>
+<span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">10s</span><span class="p">;</span>
+<span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">10s</span><span class="p">;</span>
+<span class="n">animation</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">10s</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
       </section>
